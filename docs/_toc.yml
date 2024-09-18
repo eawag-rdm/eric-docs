@@ -1,0 +1,15 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+options:
+  maxdepth: 3
+chapters:
+- file: overview
+- file: quickstart
+- file: publish-a-data-package
+- file: archiving-guide
+- file: examples
+- file: automation
+- file: faq

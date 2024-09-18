@@ -1,0 +1,41 @@
+name: Build Jupyter Book
+
+# Trigger this action on push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-jupyter-book:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Set up Python
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    # Install Jupyter Book and dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jupyter-book
+
+    # Build the Jupyter Book
+    - name: Build Jupyter Book
+      run: |
+        jupyter-book build --all docs 
+
+    # Upload the build folder as an artifact
+    - name: Upload build folder as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: eric-documentation 
+        path: ./docs/_build/html  # Adjust the path if your output folder is different
+
