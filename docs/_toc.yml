@@ -3,13 +3,21 @@
 
 format: jb-book
 root: intro
-options:
-  maxdepth: 3
-chapters:
-- file: overview
-- file: quickstart
-- file: publish-a-data-package
-- file: archiving-guide
-- file: examples
-- file: automation
-- file: faq
+parts:
+  - caption: Topic - Research Data Management
+    chapters:
+    - file: research-data-management/overview
+    - file: research-data-management/quickstart
+    - file: research-data-management/publish-a-data-package
+    - file: research-data-management/archiving-guide
+    - file: research-data-management/data_management_plans
+    - file: research-data-management/examples
+    - file: research-data-management/automation
+    - file: research-data-management/interesting_resources
+    - file: research-data-management/faq
+    
+  - caption: Topic - Software
+    chapters:
+    - file: software/licenses
+    - file: software/interesting_resources
+    - file: software/faq
