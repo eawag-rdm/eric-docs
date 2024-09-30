@@ -19,5 +19,4 @@ parts:
   - caption: Topic - Software
     chapters:
     - file: software/licenses
-    - file: software/interesting_resources
     - file: software/faq
