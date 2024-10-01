@@ -1,3 +1,5 @@
 jupyter-book
 folium
-
+tqdm 
+requests 
+requests_toolbelt
