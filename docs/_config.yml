@@ -4,7 +4,7 @@
 title: ERIC Documentation
 author: Christian Foerster - rdm@eawag.ch
 logo: _static/images/light_logo.png
-copyright: "2024"
+copyright: "CC BY"
 
 bibtex_bibfiles: 
   - sources.bib
